@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7BB81463-73F6-403F-AAC7-C3285E3EA888}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{7BB81463-73F6-403F-AAC7-C3285E3EA888}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="MainBank" ID="{13D47D36-00FB-4499-9078-CC775DFAD90B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayJump" ID="{71E5FD88-E9C5-4614-BC5E-8890007D9C30}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayRangedShoot" ID="{A6C2863F-C3C5-4A0D-BCE2-09584C7F9E08}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

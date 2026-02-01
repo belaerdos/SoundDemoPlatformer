@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayRangedShoot" ID="{A6C2863F-C3C5-4A0D-BCE2-09584C7F9E08}">
+					<ChildrenList>
+						<Action Name="" ID="{1EA3D3A2-DB6E-43AF-B325-1A121E5A6BEB}" ShortID="787485853">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ranged_shoot" ID="{095EAA70-E75F-4A1B-93B3-7D22B8FB59D6}" WorkUnitID="{5070E012-D104-42E6-832D-F439670135A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayJump" ID="{71E5FD88-E9C5-4614-BC5E-8890007D9C30}">
+					<ChildrenList>
+						<Action Name="" ID="{7E140BF5-6529-4CA1-B13D-C6A4EA9025C2}" ShortID="256379916">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="jump" ID="{9A4F9A59-791F-4616-8C12-820C1D18C26D}" WorkUnitID="{5070E012-D104-42E6-832D-F439670135A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2880737896",
+    "Type": "User",
+    "GUID": "{13D47D36-00FB-4499-9078-CC775DFAD90B}",
+    "Language": "SFX",
+    "Hash": "{51B77488-2579-5F2C-5AF6-A71914315A1F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
+    "ShortName": "MainBank",
+    "Path": "MainBank.bnk",
+    "Media": [
+     {
+      "Id": "118286170",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bluezone_BC0302_industrial_lever_switch_small_003.wav",
+      "CachePath": "40/{40D7006B-6029-D456-D828-60387B70215A}.wem"
+     },
+     {
+      "Id": "686022392",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bluezone_BC0295_sci_fi_weapon_gun_shot_008.wav",
+      "CachePath": "DC/{DC6B9302-7ED4-6D12-9E49-284EED083110}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1717476791",
+      "Name": "PlayJump",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayJump",
+      "GUID": "{71E5FD88-E9C5-4614-BC5E-8890007D9C30}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2524239",
+      "DurationMax": "0.2524239",
+      "MediaRefs": [
+       {
+        "Id": "118286170"
+       }
+      ]
+     },
+     {
+      "Id": "2886059779",
+      "Name": "PlayRangedShoot",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayRangedShoot",
+      "GUID": "{A6C2863F-C3C5-4A0D-BCE2-09584C7F9E08}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "686022392"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{639A7105-15AF-C710-3855-EE0EAB72B394}"
+ }
+}

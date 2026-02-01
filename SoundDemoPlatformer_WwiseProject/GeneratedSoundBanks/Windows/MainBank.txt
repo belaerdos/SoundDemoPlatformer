@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1717476791	PlayJump			\Default Work Unit\PlayJump	
+	2886059779	PlayRangedShoot			\Default Work Unit\PlayRangedShoot	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	118286170	jump	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\40\{40D7006B-6029-D456-D828-60387B70215A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump		42532
+	686022392	ranged_shoot	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\DC\{DC6B9302-7ED4-6D12-9E49-284EED083110}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ranged_shoot		192096
+
