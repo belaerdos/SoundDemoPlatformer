@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
-    [Header("Health")]
+    [Header("Enemy Health")]
     public int maxHealth = 3;
     public int currentHealth;
 
@@ -16,7 +16,6 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log("Player health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -26,9 +25,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player died!");
-        // Respawn or game over later
-
-        gameObject.SetActive(false);  // Deactivates and hides the GameObject
+        gameObject.SetActive(false);
     }
 }
+

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6314b87bf6733f40aac7c3285e3ea888
     GuidInternal: 
-    m_lastTime: -8584316675509119324
+    m_lastTime: -8584316666850010431
     List:
     - name: MainBank
       guid: 367dd413fb0099449078cc775dfad90b
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 57ae67b1fbce714b951065db0fe9cb67
     GuidInternal: 
-    m_lastTime: -8584316675509368862
+    m_lastTime: -8584316666850239987
     List:
+    - name: PlayJump
+      guid: 88fde571c5e91446bc5e8890007d9c30
+      id: 1717476791
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57ae67b1fbce714b951065db0fe9cb67
+      - ElementName: PlayJump
+        ObjectType: 3
+        guid: 88fde571c5e91446bc5e8890007d9c30
+      Path: Events\Default Work Unit\PlayJump
+      maxAttenuation: 0
+      maxDuration: 0.2524239
+      minDuration: 0.2524239
     - name: PlayRangedShoot
       guid: 3f86c2a6c5c30d4abce209584c7f9e08
       id: 2886059779
