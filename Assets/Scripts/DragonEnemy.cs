@@ -12,8 +12,8 @@ public class DragonEnemy : MonoBehaviour
     public float attackCooldown = 2f;
 
     [Header("Attacks")]
-    public float flyKickRange = 2f;
-    public float jumpAttackRange = 3f;
+    public float flyKickRange = 1.3f;
+    public float jumpAttackRange = 1.3f;
 
     private Transform player;
     private EnemyHealth health;
@@ -21,13 +21,12 @@ public class DragonEnemy : MonoBehaviour
     private Rigidbody2D rb;
 
     private DragonState state = DragonState.Idle;
-    private bool isAttacking;
     private float nextAttackTime;
-    private bool useJumpAttack;   // switches after 2 HP lost
+    private bool useJumpAttack;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
         health = GetComponent<EnemyHealth>();
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -37,73 +36,114 @@ public class DragonEnemy : MonoBehaviour
     {
         if (player == null || health == null) return;
 
-        // Switch to JumpAttack after losing 2 HP (4 → 2)
+        // Switch attack after losing 2 HP
         if (health.currentHealth <= health.maxHealth - 2)
             useJumpAttack = true;
 
-        if (isAttacking) return;
-
         float dist = Vector2.Distance(transform.position, player.position);
 
-        // Face player
-        float dirX = player.position.x - transform.position.x;
-        transform.localScale = new Vector3(Mathf.Sign(dirX), 1f, 1f);
+        FacePlayer();
 
         switch (state)
         {
             case DragonState.Idle:
-                anim.Play("dragonEnemyIdle");
-                if (dist <= detectionRange)
-                    state = DragonState.Chasing;
+                HandleIdle(dist);
                 break;
 
             case DragonState.Chasing:
-                anim.Play("dragonEnemyWalk"); // walk animation
+                HandleChasing(dist);
+                break;
 
-                // Move toward player
-                Vector2 dir = (player.position - transform.position).normalized;
-                rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
-
-                // Decide when to attack
-                float neededRange = useJumpAttack ? jumpAttackRange : flyKickRange;
-                if (dist <= neededRange && Time.time >= nextAttackTime)
-                    StartCoroutine(AttackRoutine());
-                // If player far again, go back to Idle
-                if (dist > detectionRange * 1.2f)
-                    state = DragonState.Idle;
+            case DragonState.Attacking:
+                // Movement handled in coroutine
+                rb.velocity = Vector2.zero;
                 break;
         }
+    }
+
+    void HandleIdle(float dist)
+    {
+        anim.Play("dragonEnemyIdle");
+        rb.velocity = Vector2.zero;
+
+        if (dist <= detectionRange && Time.time >= nextAttackTime)
+        {
+            state = DragonState.Chasing;
+        }
+    }
+
+    void HandleChasing(float dist)
+    {
+        float attackRange = useJumpAttack ? jumpAttackRange : flyKickRange;
+
+        // Too far → stop chasing
+        if (dist > detectionRange)
+        {
+            state = DragonState.Idle;
+            return;
+        }
+
+        // In attack range
+        if (dist <= attackRange)
+        {
+            // Cooldown active → wait (idle, no movement)
+            if (Time.time < nextAttackTime)
+            {
+                state = DragonState.Idle;
+                return;
+            }
+
+            // Ready to attack
+            StartCoroutine(AttackRoutine());
+            return;
+        }
+
+        // Move toward player
+        anim.Play("dragonEnemyWalk");
+        Vector2 dir = (player.position - transform.position).normalized;
+        rb.velocity = new Vector2(dir.x * moveSpeed, rb.velocity.y);
     }
 
     IEnumerator AttackRoutine()
     {
-        isAttacking = true;
-        rb.velocity = Vector2.zero;
         state = DragonState.Attacking;
-
-        // Make dragon invulnerable during attack
+        rb.velocity = Vector2.zero;
         health.canTakeDamage = false;
 
         if (!useJumpAttack)
         {
-            // Stage 1: FlyKick
             anim.Play("dragonEnemyFlyKick");
-            // TODO: move forward a bit or deal damage via animation event
-            yield return new WaitForSeconds(0.5f); // match animation length
+            yield return new WaitForSeconds(0.5f);
         }
         else
         {
-            // Stage 2: JumpAttack
             anim.Play("dragonEnemyJumpAttack");
-            // TODO: vertical/horizontal leap, damage via event
-            yield return new WaitForSeconds(0.7f); // match animation length
+            yield return new WaitForSeconds(0.7f);
         }
 
-        // Back to idle/chase
-        anim.Play("dragonEnemyIdle");
-        health.canTakeDamage = true;   // vulnerable again
-        isAttacking = false;
-        state = DragonState.Chasing;
+        health.canTakeDamage = true;
         nextAttackTime = Time.time + attackCooldown;
+        state = DragonState.Idle;
+    }
+
+    void FacePlayer()
+    {
+        float dirX = player.position.x - transform.position.x;
+        if (dirX != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(dirX), 1f, 1f);
+        }
+    }
+
+    public void DealDamageToPlayer()
+    {
+        if (player == null) return;
+
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(1);
+        }
     }
 }
+
