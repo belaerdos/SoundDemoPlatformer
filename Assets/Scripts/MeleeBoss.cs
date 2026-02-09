@@ -54,6 +54,17 @@ public class MeleeBoss : MonoBehaviour
         anim.SetBool("isLunging", false);
         isAttacking = false;
     }
+
+    public void DealDamageToPlayer()
+    {
+        if (player == null) return;
+
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(1);
+        }
+    }
 }
 
 

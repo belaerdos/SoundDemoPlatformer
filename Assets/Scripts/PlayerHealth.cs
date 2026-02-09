@@ -29,6 +29,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void AddHealth(int healthValue)
+    {
+        currentHealth += healthValue;
+        UpdateHealthDisplay();
+    }
+
     void Die()
     {
         Debug.Log("Player died!");
