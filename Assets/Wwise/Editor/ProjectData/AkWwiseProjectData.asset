@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 6314b87bf6733f40aac7c3285e3ea888
     GuidInternal: 
-    m_lastTime: -8584316666850010431
+    m_lastTime: -8584303835837668077
     List:
     - name: MainBank
       guid: 367dd413fb0099449078cc775dfad90b
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 57ae67b1fbce714b951065db0fe9cb67
     GuidInternal: 
-    m_lastTime: -8584316666850239987
+    m_lastTime: -8584303836328186425
     List:
+    - name: PlayHeartbeat
+      guid: 69322b3a61e1c049ac6817154cdb0b42
+      id: 4284960165
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57ae67b1fbce714b951065db0fe9cb67
+      - ElementName: PlayHeartbeat
+        ObjectType: 3
+        guid: 69322b3a61e1c049ac6817154cdb0b42
+      Path: Events\Default Work Unit\PlayHeartbeat
+      maxAttenuation: 0
+      maxDuration: 11.264213
+      minDuration: 11.264213
     - name: PlayJump
       guid: 88fde571c5e91446bc5e8890007d9c30
       id: 1717476791
@@ -130,6 +147,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: PlaySword
+      guid: ae91e8a23d0ded4e8051c603a97d5fc8
+      id: 715441962
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57ae67b1fbce714b951065db0fe9cb67
+      - ElementName: PlaySword
+        ObjectType: 3
+        guid: ae91e8a23d0ded4e8051c603a97d5fc8
+      Path: Events\Default Work Unit\PlaySword
+      maxAttenuation: 0
+      maxDuration: 0.2131091
+      minDuration: 0.2131091
+    - name: PlayTornado
+      guid: 79c5a4b24fae6b4ab39fcdcc6b2d41c3
+      id: 3832882534
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 57ae67b1fbce714b951065db0fe9cb67
+      - ElementName: PlayTornado
+        ObjectType: 3
+        guid: 79c5a4b24fae6b4ab39fcdcc6b2d41c3
+      Path: Events\Default Work Unit\PlayTornado
+      maxAttenuation: 0
+      maxDuration: 1.9901102
+      minDuration: 1.9901102
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

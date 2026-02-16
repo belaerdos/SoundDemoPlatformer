@@ -25,6 +25,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayTornado" ID="{B2A4C579-AE4F-4A6B-B39F-CDCC6B2D41C3}">
+					<ChildrenList>
+						<Action Name="" ID="{714E03B6-62F8-42F3-9ECA-7E96F79D79A4}" ShortID="84809632">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tornado" ID="{9D8A6683-4F5C-4A0C-831D-145ED47BB8F1}" WorkUnitID="{5070E012-D104-42E6-832D-F439670135A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlaySword" ID="{A2E891AE-0D3D-4EED-8051-C603A97D5FC8}">
+					<ChildrenList>
+						<Action Name="" ID="{D596C00B-7D41-4123-927A-0F1D86318149}" ShortID="549872836">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sword" ID="{D26D5365-8FBE-40DE-A8B6-14FDE69F679A}" WorkUnitID="{5070E012-D104-42E6-832D-F439670135A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayHeartbeat" ID="{3A2B3269-E161-49C0-AC68-17154CDB0B42}">
+					<ChildrenList>
+						<Action Name="" ID="{AB7C282D-4EF9-40A2-BFC4-F1437ACC8291}" ShortID="533299013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="heartbeat" ID="{C07985A2-42C8-492E-AE77-5F2EC7B43C4E}" WorkUnitID="{5070E012-D104-42E6-832D-F439670135A8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

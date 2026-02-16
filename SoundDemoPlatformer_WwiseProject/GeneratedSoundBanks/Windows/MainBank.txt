@@ -1,8 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
+	715441962	PlaySword			\Default Work Unit\PlaySword	
 	1717476791	PlayJump			\Default Work Unit\PlayJump	
 	2886059779	PlayRangedShoot			\Default Work Unit\PlayRangedShoot	
+	3832882534	PlayTornado			\Default Work Unit\PlayTornado	
+	4284960165	PlayHeartbeat			\Default Work Unit\PlayHeartbeat	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	118286170	jump	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\40\{40D7006B-6029-D456-D828-60387B70215A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump		42532
+	42270658	heartbeat	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\F8\{F89677A5-71FD-C038-0B0E-13F3A476AB8F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\heartbeat		2162824
+	118286170	jump	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\51\{51520447-8F8E-AC31-4F38-3B37DA6ADD2B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\jump		42532
+	525429780	tornado	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\F1\{F1C5D528-417C-04FC-E014-4AFA163A5FCA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\tornado		382196
 	686022392	ranged_shoot	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\DC\{DC6B9302-7ED4-6D12-9E49-284EED083110}.wem		\Actor-Mixer Hierarchy\Default Work Unit\ranged_shoot		192096
+	730808965	sword	E:\Projects\Games\SoundDemoPlatformer\SoundDemoPlatformer_WwiseProject\.cache\23\{23643F98-4440-FC9F-174D-F352847984F0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword		41012
 

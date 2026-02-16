@@ -10,18 +10,34 @@
     "Type": "User",
     "GUID": "{13D47D36-00FB-4499-9078-CC775DFAD90B}",
     "Language": "SFX",
-    "Hash": "{51B77488-2579-5F2C-5AF6-A71914315A1F}",
+    "Hash": "{F0A34AE2-0B43-C0DF-12B5-D23C79FE54B6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
     "ShortName": "MainBank",
     "Path": "MainBank.bnk",
     "Media": [
+     {
+      "Id": "42270658",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "heartbeat.wav",
+      "CachePath": "F8/{F89677A5-71FD-C038-0B0E-13F3A476AB8F}.wem"
+     },
      {
       "Id": "118286170",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Bluezone_BC0302_industrial_lever_switch_small_003.wav",
-      "CachePath": "40/{40D7006B-6029-D456-D828-60387B70215A}.wem"
+      "CachePath": "51/{51520447-8F8E-AC31-4F38-3B37DA6ADD2B}.wem"
+     },
+     {
+      "Id": "525429780",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "tornado.wav",
+      "CachePath": "F1/{F1C5D528-417C-04FC-E014-4AFA163A5FCA}.wem"
      },
      {
       "Id": "686022392",
@@ -30,9 +46,31 @@
       "Location": "Memory",
       "ShortName": "Bluezone_BC0295_sci_fi_weapon_gun_shot_008.wav",
       "CachePath": "DC/{DC6B9302-7ED4-6D12-9E49-284EED083110}.wem"
+     },
+     {
+      "Id": "730808965",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "sword.wav",
+      "CachePath": "23/{23643F98-4440-FC9F-174D-F352847984F0}.wem"
      }
     ],
     "Events": [
+     {
+      "Id": "4284960165",
+      "Name": "PlayHeartbeat",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayHeartbeat",
+      "GUID": "{3A2B3269-E161-49C0-AC68-17154CDB0B42}",
+      "DurationType": "OneShot",
+      "DurationMin": "11.264213",
+      "DurationMax": "11.264213",
+      "MediaRefs": [
+       {
+        "Id": "42270658"
+       }
+      ]
+     },
      {
       "Id": "1717476791",
       "Name": "PlayJump",
@@ -60,10 +98,38 @@
         "Id": "686022392"
        }
       ]
+     },
+     {
+      "Id": "715441962",
+      "Name": "PlaySword",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlaySword",
+      "GUID": "{A2E891AE-0D3D-4EED-8051-C603A97D5FC8}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2131091",
+      "DurationMax": "0.2131091",
+      "MediaRefs": [
+       {
+        "Id": "730808965"
+       }
+      ]
+     },
+     {
+      "Id": "3832882534",
+      "Name": "PlayTornado",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayTornado",
+      "GUID": "{B2A4C579-AE4F-4A6B-B39F-CDCC6B2D41C3}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.9901102",
+      "DurationMax": "1.9901102",
+      "MediaRefs": [
+       {
+        "Id": "525429780"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{639A7105-15AF-C710-3855-EE0EAB72B394}"
+  "FileHash": "{CCA276E1-1695-EEC8-7597-2D986908203F}"
  }
 }

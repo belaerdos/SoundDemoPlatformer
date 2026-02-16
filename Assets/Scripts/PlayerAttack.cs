@@ -54,6 +54,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Shoot(Vector3 targetPos)
     {
+        // Play Wwise tornado
+        AkUnitySoundEngine.PostEvent("PlayTornado", gameObject);
+
         Vector2 direction = (targetPos - firePoint.position).normalized;
         GameObject tornado = Instantiate(tornadoPrefab, firePoint.position, Quaternion.identity);
         tornado.GetComponent<PlayerTornado>().speed = tornadoSpeed;

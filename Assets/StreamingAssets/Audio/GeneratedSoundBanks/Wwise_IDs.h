@@ -13,8 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAYHEARTBEAT = 4284960165U;
         static const AkUniqueID PLAYJUMP = 1717476791U;
         static const AkUniqueID PLAYRANGEDSHOOT = 2886059779U;
+        static const AkUniqueID PLAYSWORD = 715441962U;
+        static const AkUniqueID PLAYTORNADO = 3832882534U;
     } // namespace EVENTS
 
     namespace BANKS

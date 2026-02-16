@@ -78,6 +78,99 @@
 						<ActiveSource Name="Bluezone_BC0302_industrial_lever_switch_small_003" ID="{4476582D-91E5-4C8E-BB91-A1578BDD5CC5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="sword" ID="{D26D5365-8FBE-40DE-A8B6-14FDE69F679A}" ShortID="124917968">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E475EDE0-31E5-437A-BAD1-AAEB6240A99D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AAADA888-9C05-4F4C-9D6A-7AABEB8D8906}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="sword" ID="{EC623B00-DDFF-4B11-AF4A-E4F79911A02C}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0387867273893873"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0418373688694515"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.00784450666302216"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.220953616739557"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>sword.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="730808965"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="sword" ID="{EC623B00-DDFF-4B11-AF4A-E4F79911A02C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="tornado" ID="{9D8A6683-4F5C-4A0C-831D-145ED47BB8F1}" ShortID="666553140">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E475EDE0-31E5-437A-BAD1-AAEB6240A99D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AAADA888-9C05-4F4C-9D6A-7AABEB8D8906}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="tornado" ID="{086598EF-662A-4A23-976E-9A941AE50F68}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.183868875690535"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.08158162170903"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="1.11943697846885"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.10954708230482"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>tornado.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="525429780"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="tornado" ID="{086598EF-662A-4A23-976E-9A941AE50F68}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="heartbeat" ID="{C07985A2-42C8-492E-AE77-5F2EC7B43C4E}" ShortID="561088490">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E475EDE0-31E5-437A-BAD1-AAEB6240A99D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AAADA888-9C05-4F4C-9D6A-7AABEB8D8906}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="heartbeat" ID="{5CC7E28E-A474-4EE6-9538-13775CB737E2}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0593265653928521"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.133484772133917"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="11.2642122985402"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>heartbeat.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="42270658"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="heartbeat" ID="{5CC7E28E-A474-4EE6-9538-13775CB737E2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

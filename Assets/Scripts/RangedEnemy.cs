@@ -54,6 +54,5 @@ public class RangedEnemy : MonoBehaviour
 
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().speed = 8f;
-        Debug.Log("Shoot!");
     }
 }

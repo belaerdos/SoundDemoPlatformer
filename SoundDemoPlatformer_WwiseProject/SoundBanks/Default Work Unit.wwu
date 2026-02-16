@@ -6,7 +6,10 @@
 				<SoundBank Name="MainBank" ID="{13D47D36-00FB-4499-9078-CC775DFAD90B}">
 					<ObjectInclusionList>
 						<ObjectRef Name="PlayJump" ID="{71E5FD88-E9C5-4614-BC5E-8890007D9C30}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayHeartbeat" ID="{3A2B3269-E161-49C0-AC68-17154CDB0B42}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayRangedShoot" ID="{A6C2863F-C3C5-4A0D-BCE2-09584C7F9E08}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayTornado" ID="{B2A4C579-AE4F-4A6B-B39F-CDCC6B2D41C3}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlaySword" ID="{A2E891AE-0D3D-4EED-8051-C603A97D5FC8}" WorkUnitID="{B167AE57-CEFB-4B71-9510-65DB0FE9CB67}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

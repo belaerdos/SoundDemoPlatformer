@@ -59,6 +59,9 @@ public class MeleeBoss : MonoBehaviour
     {
         if (player == null) return;
 
+        // Play Wwise tornado
+        AkUnitySoundEngine.PostEvent("PlaySword", gameObject);
+
         PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
